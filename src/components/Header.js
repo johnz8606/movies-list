@@ -1,10 +1,12 @@
-import React from "react";
+import { Link } from 'react-router-dom';
+import './Header.scss';
 //rafce command to create Header
 const Header = () => {
   return (
     <header>
-      <h1>Favorite Movies App</h1>
-      <p> Mark your favorite movies</p>
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/movies">Movies</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link>
+      </nav>
     </header>
   );
 };
